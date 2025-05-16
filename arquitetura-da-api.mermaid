@@ -1,0 +1,15 @@
+graph TD;
+    A["Cliente"] --> B["API Java"]
+    B --> C["Controllers"]
+    C --> D["Services"]
+    D --> E["Repositories"]
+    E --> F["Banco de Dados"]
+    D --> G["TransfereGovClient"]
+    G --> H["API Transfere Gov"]
+    
+    subgraph "API Java"
+        C
+        D
+        E
+        G
+    end
